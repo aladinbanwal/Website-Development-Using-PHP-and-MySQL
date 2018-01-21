@@ -1,0 +1,215 @@
+<?php
+session_start (); // session starts here
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Acute - Tutor|Trainee|Institute - At one place</title>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+	integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+	crossorigin="anonymous">
+</head>
+<body>
+	<header>
+		<nav id="header" class="navbar navbar-expand-lg navbar-dark fixed-top"
+			role="navigation">
+			<div class="container">
+				<a href="index.php" class="navbar-brand"><img
+					src="resources/images/logo.png" id="img1" /></a>
+				<button class="navbar-toggler border-0" type="button"
+					data-toggle="collapse" data-target="#exCollapsingNavbar">&#9776;</button>
+				<div class="collapse navbar-collapse" id="exCollapsingNavbar">
+					<form class="searchbar col-md-6 navbar-form navbar-center">
+						<div class="input-group">
+							<input type="text" id="nsb-2" class="form-control"
+								placeholder="Search courses which you want to learn">
+							<div class="input-group-btn">
+								<button class="nsb-search-button btn btn-default" type="submit">
+									<i class="glyphicon glyphicon-search"></i>
+								</button>
+							</div>
+						</div>
+					</form>
+					<ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+						<li><a class="btn1" href="index.php">Home</a></li>
+						<span style="display: inline-block; width: 10px;"></span>
+						<li class="dropdown order-1">
+							<button type="button" id="dropdownMenu1" data-toggle="dropdown"
+								class="btn1 dropdown-toggle">
+								Login <span class="caret"></span>
+							</button>
+							<ul id="loginform" class="dropdown-menu dropdown-menu-right mt-1">
+								<li class="p-3">
+									<form class="form" role="form" action="login.php" method="post">
+										<div class="form-group">
+											<input id="emailInput" placeholder="Username or Email*"
+												class="form-control form-control-md" type="text"
+												name="username" autofocus required>
+										</div>
+										<div class="form-group">
+											<input id="passwordInput" placeholder="Password*"
+												class="form-control form-control-md" type="password"
+												name="password" value="" required>
+										</div>
+										<div class="form-group">
+											<input type="submit" class="btn btn-primary btn-block"
+												name="login" value="Login" />
+										</div>
+										<div class="form-group text-xs-center">
+											<small><a href="forgotpsw.php">Forgot password?</a></small>
+										</div>
+									</form>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4">
+				<div class="login-panel panel panel-success">
+					<div class="panel-heading">
+						<h3 class="panel-title">Sign In</h3>
+					</div>
+					<div class="panel-body">
+						<form role="form" method="post" action="login.php">
+							<fieldset>
+								<div class="form-group">
+									<input class="form-control" placeholder="Username or E-mail"
+										name="username" type="text" autofocus>
+								</div>
+								<div class="form-group">
+									<input class="form-control" placeholder="Password"
+										name="password" type="password" value="">
+								</div>
+
+
+								<input class="btn btn-lg btn-success btn-block" type="submit"
+									value="Login" name="login">
+
+								<!-- Change this to a button or input when using this as a form -->
+								<!--  <a href="index.html" class="btn btn-lg btn-success btn-block">Login</a> -->
+							</fieldset>
+						</form>
+						<center>
+							<b>Not yet Member ?</b> <br>
+							</b><a href="index.php">SignUp here</a>
+						</center>
+						<!--for centered text-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="row">
+			<img class="col-md-12" src="resources/images/footer.png"
+				style="width: 100%; height: auto; margin: 0px; padding: 0px;">
+			<div class="footer">
+				<div class="container">
+					<div class="footer-block col-md-3">
+						<strong>Address</strong><br>
+						<p>
+							#457 Acute Infotech<br>2 C Main Road, East of NGEF Layout<br>Kasturi
+							Nagar<br>Bangalore-560043
+						</p>
+					</div>
+					<div class="footer-block col-md-3">
+						<strong>Contacts</strong><br>
+						<p>
+							Email: hr@acuteinfotech.com<br>Phone: +91 7892023095<br>Fax: +91
+							8041214519
+						</p>
+					</div>
+					<div class="footer-block col-md-2">
+						<strong>Links</strong>
+						<ul>
+							<li><a class="label" href="index.php">Home</a></li>
+							<li><a class="label" href="howitwork.php">How it works</a></li>
+							<li><a class="label" href="aboutus.php">About Us</a></li>
+							<li><a class="label" href="contactus.php">Contact</a></li>
+							<li><a class="label" href="help.php">Help</a></li>
+						</ul>
+					</div>
+					<div class="footer-block col-md-1">
+						<a href="http://www.facebook.com/AladinBanwal" target="_blank"> <img
+							src="http://www.freeiconspng.com/uploads/facebook-transparent-logo-png-0.png"
+							alt="Facebook" height="28" width="28"></a> <br> <a
+							href="http://twitter.com/AladinBanwal" target="_blank"> <img
+							class="mt-2"
+							src="http://www.freeiconspng.com/uploads/twitter-icon-9.png"
+							alt="Twitter" height="30" width="30"></a> <br> <a
+							href="https://plus.google.com/+AladinChamp" target="_blank"> <img
+							src="https://qph.ec.quoracdn.net/main-qimg-b8bf521ae5b2717677270bb5d006e7cd"
+							alt="Google plus" height="30" width="30"></a> <br> <a
+							href="https://www.instagram.com/aladinbanwal" target="_blank"> <img
+							src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c521.png"
+							alt="Instagram" height="30" width="30"></a>
+					</div>
+					<div class="footer-block col-md-3">
+						<iframe
+							src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=place_id:ChIJc7CeKSkRrjsRwcTf8UBMIaE"
+							allowfullscreen="" frameborder="0"></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="footer2 col-md-12">
+				<h6>&copy;Copyright 2017. www.acuteinfotech.com</h6>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+		integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+		integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+		crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
+<?php
+
+include ("config.php");
+
+if (isset ( $_POST ['login'] )) {
+	$user_name = $_POST ['username'];
+	$user_pass = $_POST ['password'];
+	
+	$check_user = "select * from users WHERE (username='$user_name' OR email='$user_name') AND password='$user_pass'";
+	
+	$run = mysqli_query ( $dbcon, $check_user );
+	
+	if (mysqli_num_rows ( $run )) {
+		echo "<script>window.open('home.php','_self')</script>";
+		
+		$_SESSION ['username'] = $user_name; // here session is used and value of $user_email store in $_SESSION.
+	} else {
+		echo "<script>alert('Email or password is incorrect!')</script>";
+		echo "<script>window.open('index.php','_self')</script>";
+	}
+}
+?>
